@@ -1,8 +1,83 @@
-<!DOCTYPE html>
+<CTYPE html>
 <html lang="en">
 
-<head></head>
-<body> <h1> This is a test </h1>
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<!-- Font Awesome-->
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+<link rel="stylesheet" href="css/sticky-footer.css">
+<link rel="stylesheet" href="css/personal.css">
+  </head>
+
+
+<body>
+	<div class="row">
+		<div class="mt-4 container">
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">reddit.com/u/</span>
+                                <input type="text" class="form-control" id="user" placeholder="Username" aria-describedby="basic-addon1">
+			
+				<span class="fa-stack fa-lg">
+				  <i class="fa fa-search fa-stack-1x" id="LOL"></i>
+				</span>
+				<span class="fa-stack fa-lg">
+				  <i class="fa fa-times fa-stack-1x" id="clear"></i>
+				</span>
+			</div><!-- Input Grup-->
+			<br>
+			<div class="text-center"  id="loading"> </div>
+			<div id="progress_comments"></div>
+			<div id="progress_posts"></div>
+			<div id="reddit-content"></div>
+			<div id="results"></div>
+		</div> <!-- mt-4 container-->
+	</div><!-- row -->
+	
+	<div class="container">
+		<div class="row">
+			<div class="col" id="con">
+				<canvas id="myChart1" width="200" height="600"></canvas>
+			</div>
+			<div class="col" id="con1">
+				<canvas id="myChart" width="200" height="600"></canvas>
+			</div>
+		</div>
+	</div>
+
+<div class="container">
+	<hr/>
+	<div class="text-center center-block">
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="middle">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="6A7XPHRNYXB3E">
+		<input type="image" src="https://www.paypalobjects.com/en_US/DE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		</form>
+		 <p class="text-muted">Designed and built with all the love in the world by /u/strasse86</p>
+		    <br />
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+ <script src="https://j.mp/jqymin"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+<script src="js/image.js" charset="utf-8" type="text/javascript"></script>
+<script src="js/clear.js" charset="utf-8" type="text/javascript"></script>
+<script src="js/enter.js" charset="utf-8" type="text/javascript"></script>
+<script src="js/posts.js" charset="utf-8" type="text/javascript"></script>
+
+</body>
 </html>
+
