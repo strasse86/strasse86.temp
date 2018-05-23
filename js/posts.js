@@ -66,7 +66,7 @@ $.getJSON(
 	/* Check if we need to call the funciton again or if we need to quit */
 	if (result.data.after != null){
 	var next = result.data.after;
-	var comments_url  = "http://www.reddit.com/user/" +username + "/.json?jsonp=&limit=100&after=" +next;
+	var comments_url  = "https://www.reddit.com/user/" +username + "/.json?jsonp=&limit=100&after=" +next;
 	get_100_comments(comments_url);
 	}
 	/* Here we analyze the json 100 pieces*/
