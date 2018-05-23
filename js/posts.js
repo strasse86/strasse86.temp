@@ -31,7 +31,7 @@ $.getJSON(
 	/* Check if we need to call the funciton again or if we need to quit */
 	if (result.data.after != null){
 		var next = result.data.after;
-		var posts_url = "http://www.reddit.com/user/" +username + "/submitted/.json?jsonp=&limit=100&after=" +next;
+		var posts_url = "https://www.reddit.com/user/" +username + "/submitted/.json?jsonp=&limit=100&after=" +next;
 		get_100_posts(posts_url);
 	}
 	/* Here we analyze the json 100 pieces*/
