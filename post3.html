@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <link rel="stylesheet" href="/css/bootstrap.css">
+   <link rel="stylesheet" href="css/bootstrap.css">
    <link href="css/sticky-footer.css" rel="stylesheet">
      <link rel='icon' href='favicon.png' type='image/x-icon'/ >
   <title>Experiments in time</title>
@@ -23,22 +23,24 @@
 			Let's Assume that we have a very simple JavaScript Object
 			<code>
 			<p class="font-weight-light"> 
-				var person = {
-					firstname: 'Strasse',
-					lastname : '86',
-					concaten: function() {
-						var fullname = this.firstname + ' ' + this.lastname
+				var person = {<br />
+					firstname: 'Strasse',<br />
+					lastname : '86',<br />
+					concaten: function() {<br />
+						var fullname = this.firstname + ' ' + this.lastname<br />
 						return fullname;
 					}
 				}</p></code>
 			</p> 
 			
 			<p> Now let's assume that we also have a function
+			<code>
 			<p class="font-weight-light"> 
-				var display = function(){
+				var display = function(){<br />
 					console.log(this.concaten)
 				}
 			</p>	
+			</code>
 			<p> What will happen if we call the display which prints the concaten functionthat 
 			does belong to another object ? It will fail. 
 			
@@ -46,8 +48,8 @@
 			methods.
 			</p>	
 			So instead of calling 
-			<p class="font-weight-light"> display()</p> we call 
-			<p class="font-weight-light"> display.bind(person).</p>
+			<p class="font-weight-light"><code> display();</p></code> we call 
+			<p class="font-weight-light"> <code>display.bind(person);</p></code>
 
 			
 			</p>
@@ -69,7 +71,7 @@
 		  </div>
 
 </body>
-<script src="/js/jquery.js"></script>
-<script src="/js/poper.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/poper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </html>
