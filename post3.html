@@ -21,7 +21,7 @@
 			<br><br>
 			<p>
 			Let's Assume that we have a very simple JavaScript Object
-			
+			<code>
 			<p class="font-weight-light"> 
 				var person = {
 					firstname: 'Strasse',
@@ -30,7 +30,7 @@
 						var fullname = this.firstname + ' ' + this.lastname
 						return fullname;
 					}
-				}</p>
+				}</p></code>
 			</p> 
 			
 			<p> Now let's assume that we also have a function
@@ -44,8 +44,10 @@
 			
 			That is why we use bind, in order to bind methods/functions of properties to other
 			methods.
-			
-			So instead of calling display() we call display.bind(person).
+			</p>	
+			So instead of calling 
+			<p class="font-weight-light"> display()</p> we call 
+			<p class="font-weight-light"> display.bind(person).</p>
 
 			
 			</p>
