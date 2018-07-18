@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <link rel="stylesheet" href="/css/bootstrap.css">
+   <link rel="stylesheet" href="./css/bootstrap.css">
    <link href="css/sticky-footer.css" rel="stylesheet">
      <link rel='icon' href='favicon.png' type='image/x-icon'/ >
   <title>Experiments in time</title>
@@ -20,7 +20,7 @@
 			<a href="index.html" class="badge badge-light">Back</a>
 			<br><br>
 			<p>
-			<table>
+			<table id="curr">
 	<thead>
 		<tr>
 			<th></th>
@@ -10494,7 +10494,13 @@
 		  </div>
 
 </body>
-<script src="/js/jquery.js"></script>
-<script src="/js/poper.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+<script src="./js/jquery.js"></script>
+<script src="./js/poper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/tablesort.js"></script>
+<script src="./js/tablesort.js"></script>
+<script src="./js/sorts/tablesort.number.js"></script>
+<script>
+  new Tablesort(document.getElementById('curr'));
+</script>
 </html>
